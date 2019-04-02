@@ -1,16 +1,16 @@
-/**
-  * 如何區分 string==null 和 string.equals("")。
-*/
 
+#   java如何區分 string==null 和 string.equals("")
 
-// 1. java中預設的equals方法：
+## java中預設的equals方法：
 
+```java
 public boolean equals(Object obj) {
     return (this == obj);
 }
+```
 
-
-// 2. java中String的equals方法：
+## java中String的equals方法：
+```java
 public boolean equals(Object anObject) {
     if (this == anObject) {
         return true;
@@ -32,3 +32,4 @@ public boolean equals(Object anObject) {
     }
     return false;
 }
+```
