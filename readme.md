@@ -1,8 +1,8 @@
 
-#   java如何區分 string==null 和 string.equals("")
+#  ** java如何區分 string==null 和 string.equals("")**
 
 ## java中預設的equals方法：
-
+比較記憶體位置
 ```java
 public boolean equals(Object obj) {
     return (this == obj);
@@ -10,6 +10,7 @@ public boolean equals(Object obj) {
 ```
 
 ## java中String的equals方法：
+String類覆寫Object類的equals方法
 ```java
 public boolean equals(Object anObject) {
     if (this == anObject) {
